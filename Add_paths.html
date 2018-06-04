@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Path Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen"/>
     <script src="newjava.js">
     </script>
 </head>
@@ -13,14 +13,17 @@
     <div tag ="Pathway Info">
         <h1> Pathway Title</h1>
         <form>
+            Passcode: <br>
+            <input type="text", name="Passcode", id="passcode"><br>
             Pathway Title:<br>
             <input type="text" , name="Pathway Title", id="title"><br>
             Object IDs (comma separated):<br>
             <input type="text" name="Object Ids" id="objects_raw"><br>
             <button type="button" id="button" onclick="check_objects()">Submit</button>
         </form>
-        <p id="path_title">Aw man....</p>
-        <p id="object_list">What on earth is this????</p>
+        <p id="path_title">Your Title:</p>
+        <h5>Object IDs:</h5>
+        <p id="object_list"></p>
     </div>
     
 </body>

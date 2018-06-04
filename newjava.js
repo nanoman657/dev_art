@@ -1,9 +1,10 @@
 function generate_string(object_id_str)
 {
-    var i;
-    for (i = 0; text =""; i < object_id_str.length, i++)
+    var i = 0;
+    var text = ""
+    for (i = 0; i < object_id_str.length; i++)
     {
-        text = text + "\n${i + 1})" +  object_id_str[i] 
+        text += `${i + 1})` +  object_id_str[i] + "<br>"  // Append to the text
     }
     return text
 }
@@ -18,7 +19,7 @@ function check_objects()
 
     // Change the HMTL listed pathway title
     var path_title = document.getElementById("title").value
-    document.getElementById("path_title").innerHTML = "Title: \"" + path_title + "\""
+    document.getElementById("path_title").innerHTML = "Your Title: \"" + path_title + "\""
 
     // Create array from raw list of object ids
     var object_ids = object_list.split(',')
